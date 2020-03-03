@@ -18,7 +18,10 @@ public class BasicNavigation {
         WebDriver driver = new ChromeDriver() ;
         driver.get("https://www.google.com/"); // to open the website
         Thread.sleep(3000); // for demo , wait 3 seconds
+        String title = driver.getTitle(); // returns <title>Some title </title> text
+        System.out.println("title is " + title);
         driver.close(); // to close browser
+        // browser cannot close itself
 
 
 
