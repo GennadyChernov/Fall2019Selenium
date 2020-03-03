@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class BasicNavigation {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         //to start selenium script we need
         // set up webDriver (browser driver) and create webDriver object
 
@@ -16,7 +16,13 @@ public class BasicNavigation {
         //in selenium, everything starts from Web driver Interface
       //  RemoteWebDriver driver = new SafariDriver() ;
         WebDriver driver = new ChromeDriver() ;
-        driver.get("https://www.google.com/"); // to open the website  //
+        driver.get("https://www.google.com/"); // to open the website
+        Thread.sleep(3000); // for demo , wait 3 seconds
+        driver.close(); // to close browser
+
+
+
+
 
 
     }
