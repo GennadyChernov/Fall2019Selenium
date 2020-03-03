@@ -19,7 +19,19 @@ public class BasicNavigation {
         driver.get("https://www.google.com/"); // to open the website
         Thread.sleep(3000); // for demo , wait 3 seconds
         String title = driver.getTitle(); // returns <title>Some title </title> text
+
+        String expectedTitle = "Google" ;
+
         System.out.println("title is " + title);
+
+        if (expectedTitle.equals(title)){
+            System.out.println("Test Passed!");
+        }else{
+            System.out.println("Test Failed!");
+        }
+
+        //must be at the end
+
         driver.close(); // to close browser
         // browser cannot close itself
 
