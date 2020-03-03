@@ -17,7 +17,13 @@ public class BasicNavigation {
       //  RemoteWebDriver driver = new SafariDriver() ;
         WebDriver driver = new ChromeDriver() ;
         driver.get("https://www.google.com/"); // to open the website
+
+        driver.manage().window().maximize(); // to maximize browser
+
+      //  driver.manage().window().fullscreen();
+
         Thread.sleep(3000); // for demo , wait 3 seconds
+
         String title = driver.getTitle(); // returns <title>Some title </title> text
 
         String expectedTitle = "Google" ;
@@ -30,6 +36,14 @@ public class BasicNavigation {
             System.out.println("Test Failed!");
         }
 
+        driver.navigate().to("http://amazon.com");
+
+        if (driver.getTitle().toLowerCase().contains("amazon")){
+            System.out.println("Test Passed!");
+        }else{
+            System.out.println("Test Failed!");
+        }
+
         //must be at the end
 
         driver.close(); // to close browser
@@ -37,8 +51,13 @@ public class BasicNavigation {
 
 
 
+    }
 
-
-
+    public static void verifyEquals(String arg1, String arg2){
+        if (arg1.equals(arg2)) {
+            System.out.println("Test Passed");
+        }else{
+            System.out.println("Test Failed");
+        }
     }
 }
