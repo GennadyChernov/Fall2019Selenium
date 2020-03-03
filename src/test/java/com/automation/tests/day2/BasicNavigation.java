@@ -16,7 +16,7 @@ public class BasicNavigation {
         //in selenium, everything starts from Web driver Interface
       //  RemoteWebDriver driver = new SafariDriver() ;
         WebDriver driver = new ChromeDriver() ;
-        driver.get("https://www.google.com/"); // to open the website
+        driver.get("https://www.google.com/"); // to open the website  //
 
 
     }
