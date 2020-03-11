@@ -64,6 +64,13 @@ public class BasicNavigation {
         driver.navigate().refresh();//to reload page
         Thread.sleep(3000);//for demo, wait 3 seconds
 
+        System.out.println("ANOTHER ");
+
+        driver.get("https://www.sickchirpse.com/");
+        Thread.sleep(3000);
+        driver.navigate().to("https://www.yahoo.com/");
+        Thread.sleep(3000);
+        System.out.println(driver.getCurrentUrl()) ;
         //driver.navigate().to() = driver.get()
         //must be at the end
         driver.close();//to close browser
