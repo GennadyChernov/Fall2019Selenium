@@ -12,10 +12,11 @@ import org.openqa.selenium.safari.SafariDriver;
 public class FindElementsPractice {
 
     public static void main(String[] args) throws Exception{
-//        WebDriverManager.chromedriver().setup();
-        RemoteWebDriver driver = new SafariDriver();
+      WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver() ;
+       // RemoteWebDriver driver = new SafariDriver();
 
-//        RemoteWebDriver driver = DriverFactory.createDriver("chrome");
+//       RemoteWebDriver driver = DriverFactory.createDriver("chrome");
         driver.get("http://practice.cybertekschool.com/sign_up");
         WebElement fullName = driver.findElement(By.name("full_name"));
         fullName.sendKeys("Mister Twister");
@@ -47,3 +48,4 @@ public class FindElementsPractice {
         driver.quit();//to close everything
     }
 }
+
