@@ -29,7 +29,7 @@ public class FileUploading {
 
         System.out.println(filePath);//print path
 
-        upload.sendKeys(file2Path);
+        upload.sendKeys(filePath);
 
         driver.findElement(By.id("file-submit")).click();//click to upload
 
