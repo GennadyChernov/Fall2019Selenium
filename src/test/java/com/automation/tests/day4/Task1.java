@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Arrays;
 
 public class Task1 {
-    static WebDriver driver;
+    static WebDriver driver ;
 
     public static void main(String[] args) throws Exception {
        // ebayTest();
