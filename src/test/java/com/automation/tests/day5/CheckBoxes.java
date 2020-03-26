@@ -18,13 +18,6 @@ public class CheckBoxes {
         //<input type="checkbox" checked="">
         List<WebElement> checkBoxes = driver.findElements(By.tagName("input"));
 
-        checkBoxes.get(0).click(); // click on first checkbox
 
-        BrowserUtils.wait(2);
-
-        checkBoxes.get(1).click(); // click on the second checkbox
-
-        BrowserUtils.wait(2);
-        driver.quit();
     }
 }
