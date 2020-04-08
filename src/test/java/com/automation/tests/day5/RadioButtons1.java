@@ -18,6 +18,7 @@ public class RadioButtons1 {
         driver.manage().window().maximize();
         BrowserUtils.wait(2);
 
+
 // <input type="radio">
         List<WebElement> radioButtons = driver.findElements(By.tagName("input"));
 
